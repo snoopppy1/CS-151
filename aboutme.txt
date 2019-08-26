@@ -1,0 +1,12 @@
+Your name:Bolang Yu	
+Your student ID:012430015
+Your major:Software Engineering
+Your preferred email address: 496150107@qq.com
+Check one: [ ] Undergraduate
+Repeating the class?  [ ] No
+Place and semester where you took a programming course in Java: SJSU, Freshman and sophomore
+Course number and grade received:CS 46A-A, CS46B-B+
+Place and semester where you took a course in data structures: SJSU,Sophomore
+Course number and grade received:CS146-B
+Time it took you to answer the two questions below:60 minutes
+Did you ask anyone for help? [ ] No
