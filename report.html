@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<meta name="Submission" content="/tmp/codecheck/19082421145520508579119072136"/>
+<meta name="Time" content="2019-08-24T21:14:19Z"/>
+<meta name="ID" content="Strings"/>
+<meta name="User" content="19082420237mg6sji4u7k12pi33d5ziiv7q"/>
+<meta name="Problem" content="ext/160816240881urwkdi4ai5oqcyuow6ie20n"/>
+<meta name="Elapsed" content="1316 ms"/>
+<style type="text/css">
+.header {font-weight: bold; font-size: 1.2em; }
+.item {font-weight: bold;}
+.pass {color: green;}
+.fail {color: red;}
+.note {color: blue; font-weight: bold;}
+table.file td {padding-right: 1em; background: #FFF; }
+.linenumber {color: gray;}
+.footnote {font-size: 0.7em;}
+table {font-size: 0.9em;}
+td, th { background: #EEE; margin: 0.5em; padding: 0.25em;}
+table.output td {vertical-align: top;}
+div.footnotes { border-top: 1px solid gray; padding-top: 0.5em; }
+</style>
+<title>Report</title>
+</head>
+<body>
+<p class="header call">Calling with Arguments</p>
+<div class="call">
+<table class="run">
+<tr><th>&#160;</th><th>Name</th><th>Arguments</th><th>Actual</th><th>Expected</th></tr>
+<tr><td><span class="pass">pass </span></td>
+<td><pre>uniqueLetters</pre></td>
+<td><pre>"harrasses"</pre></td>
+<td><pre>he</pre></td>
+<td><pre>he</pre></td>
+</tr>
+<tr><td><span class="pass">pass </span></td>
+<td><pre>uniqueLetters</pre></td>
+<td><pre>"mississippi"</pre></td>
+<td><pre>m</pre></td>
+<td><pre>m</pre></td>
+</tr>
+<tr><td><span class="pass">pass </span></td>
+<td><pre>uniqueLetters</pre></td>
+<td><pre>"missouri"</pre></td>
+<td><pre>mour</pre></td>
+<td><pre>mour</pre></td>
+</tr>
+<tr><td><span class="pass">pass </span></td>
+<td><pre>uniqueLetters</pre></td>
+<td><pre>"orinoco"</pre></td>
+<td><pre>rinc</pre></td>
+<td><pre>rinc</pre></td>
+</tr>
+<tr><td><span class="pass">pass </span></td>
+<td><pre>uniqueLetters</pre></td>
+<td><pre>"belinda"</pre></td>
+<td><pre>belinda</pre></td>
+<td><pre>belinda</pre></td>
+</tr>
+<tr><td><span class="pass">pass </span></td>
+<td><pre>uniqueLetters</pre></td>
+<td><pre>"barbara"</pre></td>
+<td><pre></pre></td>
+<td><pre></pre></td>
+</tr>
+</table>
+</div>
+<p class="header studentFiles">Submitted files</p>
+<div class="studentFiles">
+<p class="caption">Strings.java:</p>
+<table class="file"><tr><td><pre><span class="linenumber">  1</span>
+<span class="linenumber">  2</span>
+<span class="linenumber">  3</span>
+<span class="linenumber">  4</span>
+<span class="linenumber">  5</span>
+<span class="linenumber">  6</span>
+<span class="linenumber">  7</span>
+<span class="linenumber">  8</span>
+<span class="linenumber">  9</span>
+<span class="linenumber"> 10</span>
+<span class="linenumber"> 11</span>
+<span class="linenumber"> 12</span>
+<span class="linenumber"> 13</span>
+<span class="linenumber"> 14</span>
+<span class="linenumber"> 15</span>
+<span class="linenumber"> 16</span>
+<span class="linenumber"> 17</span>
+</pre></td><td><pre>public class Strings
+{
+   public static String uniqueLetters(String str)
+   {
+      String result = "";
+      for(int i = 0; i &lt; str.length(); i++)
+      {
+         String letter = str.substring(i,i+1);
+         String others = str.substring(0,i)+str.substring(i+1,str.length());
+         if(!others.contains(letter))
+         {
+            result +=letter;
+         }
+      }
+      return result;
+   }
+}
+</pre></td></tr></table>
+</div>
+<p class="header score">Score</p>
+<div class="score">
+<p class="score">6/6</p>
+</div>
+<div class="footnotes"><div class="footnote">2019-08-24T21:14:19Z</div>
+</div>
+</body></html>
